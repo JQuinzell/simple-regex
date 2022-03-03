@@ -30,3 +30,9 @@ The `*` operator matches 0 or more of the preceding literal character
 ex: `do*g` will match `dog` `doooog` or `dg`
 
 You can mix and match all operators
+
+### Development
+
+Install with `npm install`
+
+Tests can be ran with `npm run test`
