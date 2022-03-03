@@ -1,0 +1,6 @@
+cat
+dog
+cat|dog
+ca+t
+do*g
+ca+t|do*g
