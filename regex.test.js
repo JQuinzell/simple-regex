@@ -26,7 +26,7 @@ describe('test data', () => {
   test('can use modifiers', () => {
     expect(regexSearch('dog', 'A dog was found')).toEqual(['dog'])
     expect(regexSearch('do+g', 'I like dooogs')).toEqual(['dooog'])
-    // expect(regexSearch('do*gs', 'I like dgs')).toEqual(['dgs'])
+    expect(regexSearch('do*gs', 'I like dgs')).toEqual(['dgs'])
     expect(regexSearch('do+gs*', 'I like dooog')).toEqual(['dooog'])
     expect(regexSearch('do+gs*', 'I like dooogssss')).toEqual(['dooogssss'])
   })
@@ -132,7 +132,7 @@ describe('unit tests', () => {
     it('finds repeating characters or none', () => {
       expect(operator('o', 'ooo', 0)).toEqual({ result: 'ooo', position: 3 })
       expect(operator('o', 'dooog', 1)).toEqual({ result: 'ooo', position: 4 })
-      expect(operator('o', 'dg', 0)).toEqual({ result: '', position: 1 })
+      expect(operator('o', 'dg', 0)).toEqual({ result: '', position: 0 })
     })
   })
 

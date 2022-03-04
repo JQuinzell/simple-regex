@@ -28,7 +28,7 @@ const operatorMap = {
     const numFound = i - position
     return {
       result: value.repeat(numFound),
-      position: numFound === 0 ? position + 1 : i,
+      position: numFound === 0 ? position : i,
     }
   },
 }
